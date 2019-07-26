@@ -57,7 +57,7 @@ class Thumbnails extends Component {
         const { images, selectImage, activeIndex } = this.props; // props object destructuring
         const html = (
             images.map((img, index) => (
-                <ThumbImage key={index} index={index} image={img} isThumb="true" selectImage={selectImage} isActive={index === activeIndex } getWidth={this.calculateWidth} />
+                <ThumbImage key={index} index={index} image={img} selectImage={selectImage} isActive={index === activeIndex } getWidth={this.calculateWidth} />
             ))
         )
         
